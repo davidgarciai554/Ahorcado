@@ -5,11 +5,17 @@
  */
 package codigo;
 
+import javax.swing.JButton;
+
 /**
  *
  * @author usuario
  */
 public class index extends javax.swing.JFrame {
+
+    private void chequeaBoton(JButton boton) {
+        boton.setEnabled(false);
+    }
 
     /**
      * Creates new form index
@@ -374,112 +380,86 @@ public class index extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AActionPerformed
-        // TODO add your handling code here:
+        chequeaBoton((JButton)evt.getSource());
     }//GEN-LAST:event_AActionPerformed
 
     private void BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_BActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_BActionPerformed
 
     private void CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_CActionPerformed
 
     private void DActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_DActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_DActionPerformed
 
     private void EActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_EActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_EActionPerformed
 
     private void FActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_FActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_FActionPerformed
 
     private void GActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_GActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_GActionPerformed
 
     private void HActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_HActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_HActionPerformed
 
     private void IActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_IActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_IActionPerformed
 
     private void JActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_JActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_JActionPerformed
 
     private void KActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_KActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_KActionPerformed
 
     private void LActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_LActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_LActionPerformed
 
     private void MActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_MActionPerformed
 
     private void NActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_NActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_NActionPerformed
 
     private void ÑActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ÑActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ÑActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_ÑActionPerformed
 
     private void OActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_OActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_OActionPerformed
 
     private void PActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_PActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_PActionPerformed
 
     private void QActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_QActionPerformed
 
     private void RActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_RActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_RActionPerformed
 
     private void SActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_SActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_SActionPerformed
 
     private void TActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_TActionPerformed
 
     private void UActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_UActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_UActionPerformed
 
     private void VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_VActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_VActionPerformed
 
     private void WActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_WActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_WActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_WActionPerformed
 
     private void XActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_XActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_XActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_XActionPerformed
 
     private void YActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_YActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_YActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_YActionPerformed
 
     private void ZActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ZActionPerformed
+        chequeaBoton((JButton)evt.getSource());    }//GEN-LAST:event_ZActionPerformed
 
     /**
      * @param args the command line arguments
