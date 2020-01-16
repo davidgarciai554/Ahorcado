@@ -18,9 +18,27 @@ public class index extends javax.swing.JFrame {
 
     //Guardamos cada vez que fallamos
     int numFallos = 0;
+    String palabraOculta = "CETYS";
 
     private void chequeaBoton(JButton boton) {
         boton.setEnabled(false);
+        chequeaLetra(boton.getText());
+    }
+
+    private void chequeaLetra(String letra) {
+        String palabraGuiones = jLabel1.getText();
+        if (palabraOculta.contains(letra)) {//acierto la letra
+            char letraPulsada = letra.charAt(0);
+            for (int i = 0; i < palabraOculta.length(); i++) {
+                if (palabraOculta.charAt(i) == letraPulsada) {
+                    palabraGuiones = palabraGuiones.substring(0,2*i)+letra+palabraGuiones.substring(2*i+1);
+                }
+            }
+            jLabel1.setText(palabraGuiones);
+        } else {//No acierto la letra
+            numFallos++;
+            dibujaImg();
+        }
     }
 
     private void dibujaImg() {
@@ -48,7 +66,7 @@ public class index extends javax.swing.JFrame {
                 nombreImg = "/img/ahorcado_fin.png";
                 break;
         }
-        ImageIcon miImg = new ImageIcon(new ImageIcon(getClass().getResource(nombreImg)).getImage().getScaledInstance(jLabel2.getWidth(), jLabel2.getWidth(),Image.SCALE_DEFAULT));
+        ImageIcon miImg = new ImageIcon(new ImageIcon(getClass().getResource(nombreImg)).getImage().getScaledInstance(jLabel2.getWidth(), jLabel2.getWidth(), Image.SCALE_DEFAULT));
         jLabel2.setIcon(miImg);
         //Ponemos la foto actual en el Jlabel2
     }
