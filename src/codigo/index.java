@@ -31,19 +31,27 @@ public class index extends javax.swing.JFrame {
             char letraPulsada = letra.charAt(0);
             for (int i = 0; i < palabraOculta.length(); i++) {
                 if (palabraOculta.charAt(i) == letraPulsada) {
-                    palabraGuiones = palabraGuiones.substring(0,2*i)+letra+palabraGuiones.substring(2*i+1);
+                    palabraGuiones = palabraGuiones.substring(0, 2 * i) + letra + palabraGuiones.substring(2 * i + 1);
                 }
             }
             jLabel1.setText(palabraGuiones);
+            if (!palabraGuiones.contains("_")) {
+                numFallos=-1;
+                dibujaImg();
+            }
         } else {//No acierto la letra
             numFallos++;
             dibujaImg();
         }
+
     }
 
     private void dibujaImg() {
         String nombreImg = "";
         switch (numFallos) {
+            case -1:
+                nombreImg = "/img/acertasteTodo.png";
+                break;
             case 0:
                 nombreImg = "/img/ahorcado_0.png";
                 break;
