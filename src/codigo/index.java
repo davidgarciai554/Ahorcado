@@ -6,6 +6,7 @@
 package codigo;
 
 import java.awt.Image;
+import java.util.Random;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -18,7 +19,7 @@ public class index extends javax.swing.JFrame {
 
     //Guardamos cada vez que fallamos
     int numFallos = 0;
-    String palabraOculta = "CETYS";
+    String palabraOculta = eligePalabra();
 
     private void chequeaBoton(JButton boton) {
         boton.setEnabled(false);
@@ -36,14 +37,20 @@ public class index extends javax.swing.JFrame {
             }
             jLabel1.setText(palabraGuiones);
             if (!palabraGuiones.contains("_")) {
-                numFallos=-1;
+                numFallos = -1;
                 dibujaImg();
             }
         } else {//No acierto la letra
             numFallos++;
             dibujaImg();
         }
+    }
 
+    private String eligePalabra() {
+        String[] listaPalabras = {"HolA", "VLADikaKA", "BaBy YOdA"};
+        Random aleatorio = new Random();
+        int pos = aleatorio.nextInt(listaPalabras.length);
+        return listaPalabras[pos].toUpperCase();
     }
 
     private void dibujaImg() {
@@ -82,6 +89,11 @@ public class index extends javax.swing.JFrame {
     public index() {
         initComponents();
         dibujaImg();
+        String aux = "";
+        for (int i=0;i<palabraOculta.length();i++){
+            aux+="_ ";
+        }
+        jLabel1.setText(aux);
     }
 
     /**
