@@ -20,10 +20,13 @@ public class index extends javax.swing.JFrame {
     //Guardamos cada vez que fallamos
     int numFallos = 0;
     String palabraOculta = eligePalabra();
+    boolean partidaTerminada = false;
 
     private void chequeaBoton(JButton boton) {
-        boton.setEnabled(false);
-        chequeaLetra(boton.getText());
+        if (!partidaTerminada) {
+            boton.setEnabled(false);
+            chequeaLetra(boton.getText());
+        }
     }
 
     private void chequeaLetra(String letra) {
@@ -39,9 +42,11 @@ public class index extends javax.swing.JFrame {
             if (!palabraGuiones.contains("_")) {
                 numFallos = -1;
                 dibujaImg();
+                partidaTerminada=true;
             }
         } else {//No acierto la letra
             numFallos++;
+            if(numFallos==6) partidaTerminada=true;
             dibujaImg();
         }
     }
@@ -90,8 +95,8 @@ public class index extends javax.swing.JFrame {
         initComponents();
         dibujaImg();
         String aux = "";
-        for (int i=0;i<palabraOculta.length();i++){
-            aux+="_ ";
+        for (int i = 0; i < palabraOculta.length(); i++) {
+            aux += "_ ";
         }
         jLabel1.setText(aux);
     }
